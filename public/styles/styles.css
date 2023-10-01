@@ -586,6 +586,10 @@ progress {
   vertical-align: baseline;
 }
 
+div {
+  min-width: 460px;
+}
+
 [hidden] {
   display: none !important;
 }
@@ -6964,6 +6968,11 @@ textarea.form-control-lg {
 
 .icon-link-hover:hover > .bi, .icon-link-hover:focus-visible > .bi {
   transform: var(--bs-icon-link-transform, translate3d(0.25em, 0, 0));
+}
+
+.icon-footer {
+  font-size: 24px;
+  color: white;
 }
 
 .ratio {
