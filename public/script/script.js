@@ -7,9 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add click event listeners to all navigation links
     document.querySelectorAll('.nav-link-top').forEach(link => {
-        link.addEventListener('click', function (event) {
-            // Prevent the default link behavior
-
+        link.addEventListener('click', function () {
             // Get the href attribute of the clicked link
             const href = this.getAttribute('href');
 
@@ -23,7 +21,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Change items descriptions for selection on nav-bar-side
     changeNavBarItems(path); 
-      
+
+    if (path === '/contact') {
+        submitEmail();
+    };
 });
 
 function setActiveClass(path) {
@@ -69,32 +70,45 @@ function changeBannerMessage(path){
 };
 
 function changeNavBarItems(path){
-    const navBarItems = document.getElementById('navbar-side');
-    let items = navBarItems.querySelectorAll(".nav-link");
-    
-    // Check current page to change the value of the side navigation bar
-    if (path === '/'){
-        items[0].innerHTML = "About Me";
-        items[1].innerHTML = "Projects";
-        items[2].innerHTML = "Services";
-        items[3].innerHTML = "Contact";
-    }
-    else if (path === '/about'){
-        items[0].innerHTML = "Videogames";
-        items[1].innerHTML = "Fashion";
-        items[2].innerHTML = "Make Up";
-        items[3].innerHTML = "Animals";
-    }
-    else if (path === '/projects'){
-        items[0].innerHTML = "Project 1";
-        items[1].innerHTML = "Project 2";
-        items[2].innerHTML = "Project 3";
-        items[3].innerHTML = "Project 4";
-    } 
-    else if (path === '/services'){    
-        items[0].innerHTML = "Service 1";
-        items[1].innerHTML = "Service 2";
-        items[2].innerHTML = "Service 3";
-        items[3].innerHTML = "Service 4";
-    } 
+    if (!(path === '/contact')){
+        const navBarItems = document.getElementById('navbar-side');
+        let items = navBarItems.querySelectorAll(".nav-link");
+        
+        // Check current page to change the value of the side navigation bar
+        if (path === '/'){
+            items[0].innerHTML = "About Me";
+            items[1].innerHTML = "Projects";
+            items[2].innerHTML = "Services";
+            items[3].innerHTML = "Contact";
+        }
+        else if (path === '/about'){
+            items[0].innerHTML = "Videogames";
+            items[1].innerHTML = "Fashion";
+            items[2].innerHTML = "Make Up";
+            items[3].innerHTML = "Animals";
+        }
+        else if (path === '/projects'){
+            items[0].innerHTML = "Project 1";
+            items[1].innerHTML = "Project 2";
+            items[2].innerHTML = "Project 3";
+            items[3].innerHTML = "Project 4";
+        } 
+        else if (path === '/services'){    
+            items[0].innerHTML = "Service 1";
+            items[1].innerHTML = "Service 2";
+            items[2].innerHTML = "Service 3";
+            items[3].innerHTML = "Service 4";
+        }; 
+    };
+};
+
+function submitEmail(){
+    const emailForm = document.getElementById("emailForm");
+    emailForm.addEventListener('submit', function (event) {
+        let subjectValue = document.getElementById('subject').value;
+        let bodyValue = document.getElementById('message').value;
+        let mail = 'mailto:selene_mgr@outlook.com?subject=' + encodeURIComponent(subjectValue) + '&body=' + encodeURIComponent(bodyValue);
+        window.location.href = mail;
+        event.preventDefault();
+    });
 };
