@@ -7,7 +7,44 @@
         <%- include("../partials/nav-bar"); %>
         <%- include("../partials/banner"); %>
         <div class="container py-5 d-flex align-items-start">
-            
+            <%- include("../partials/nav-bar-side"); %>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-side" data-bs-offset="0" tabindex="0">
+                <div class="row py-4 mb-5">
+                    <div class="col-6 px-5" id="item-1">
+                        <h2 class="code-color">Videogames</h2>
+                        <p class=""> I am obsessed with playing videogames🎮, It has been my favorite hobby since I was 2 years old. My first game was Donkey Kong Country for SNES🐒. Currently, my favorite genre to play are Shooters, platforms and MMORPG'S🪅. My favorite game is Nier Automata🤖. Playing videogames help me to relax, enjoy the artistic direction and improve my logical thinking🧩.</p>
+                    </div>
+                    <div class="col-auto img-container">
+                        <img class="rounded img-fluid" src="/images/videogames.jpg" alt="Picture of a Pink Controller with a title that says Gaming">
+                    </div>             
+                </div>  
+                <div class="row py-4 my-5">
+                    <div class="col-auto img-container-horizontal r-4"><img class="rounded img-fluid-horizontal" src="/images/fashion.jpg" alt="Picture of Black High Heels, a pair of Sun Glasses and a Phone"></div>
+                    <div class="col-6 px-5">
+                        <h2 id="item-2" class="code-color">Fashion</h2>
+                        <p>Since I have discovered different types and styles of clothes👗, I have fallen in love with matching clothes with similar gamma of colors, matching their styles to highlight their features and make beautiful combinations👠. I love to make amusing Outfits every day I go outside, making me feeling pretty and confident about my look💃.</p> 
+                    </div>  
+                </div>
+                <div class="row py-4 my-5">
+                    <div class="col-6 px-5">
+                        <h2 id="item-3" class="code-color">MakeUp</h2>
+                        <p>Once I learned how to match clothes👒, I found that MakeUp was an important asset to highlight even more the clothes features💄. With MakeUo I can express my artistic side in a way that makes me feel beautiful and I can create even more outfit combinations👙. In addition, while doing my MakeUp I practice my artistic side and improves my painting abilities💍.</p>
+                    </div>
+                    <div class="col-auto img-container-horizontal">
+                        <img class="rounded img-fluid-horizontal" src="/images/makeup.jpg" alt="Picture of some make up products on a table">
+                    </div>
+                </div>
+                <div class="row py-4 my-5">
+                    <div class="col-auto img-container-horizontal">
+                        <img class="rounded img-fluid-horizontal" src="/images/pets.jpg" alt="Gem Game Screenshot">
+                    </div>
+                    <div class="col-6 px-5">
+                        <h2 id="item-4" class="code-color">Animals</h2>
+                        <p>When I born, my Mom had 2 Rabbits🐇, 4 Parrots🦜, 1 Turtle🐢 and 1 Dog🐶. She gave me my name based on one of her rabit's name. Through all my life I have been surrounded by pets. I had 2 Cat-fish Pets🐠, 2 Rabbits🐇, 5 Baby Chicks🐣 and 1 Dog🐶. I have discovered and I believe that pets are more worthy than most humans, since pets are purely innocence if you give them unconditional love💗, they will always be loyal and will never say or do anything harmful behind your back💖.</p>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
         <%- include("../partials/footer"); %>
     </body>
