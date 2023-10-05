@@ -6,9 +6,31 @@
     <body>
         <%- include("../partials/nav-bar"); %>
         <%- include("../partials/banner"); %>
-        <div class="container py-5 d-flex align-items-start">
-            
+        <div class="container d-flex align-items-center justify-content-around">
+            <div class="row pt-5">
+                <div class="col-auto px-5" id="item-1">
+                    <p class="icon-default fs-2"><i class="fa fa-phone" aria-hidden="true"> +1 (437)-980-3226</i></p>
+                </div>
+                <div class="col-auto px-5" id="item-1">
+                    <p class="icon-default fs-2"><i class="fa fa-envelope" aria-hidden="true"> selene_mgr@outlook.com</i></p>
+                </div>           
+            </div>  
+        </div> 
+        <div class="container py-5 mw-50">
+            <form id="emailForm">
+                <div class="mb-4">
+                    <label for="subject" class="mb-2"><b>Subject: </b></label>
+                    <input type="text" class="form-control" id="subject">
+                </div>
+                <div class="my-4">
+                    <label for="message" class="mb-2"><b>Message: </b></label>
+                    <textarea class="form-control" rows="5" id="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-code">Submit</button>
+                <button type="reset" class="btn btn-outline-code">Reset</button>
+            </form>
         </div>
+    </div>    
         <%- include("../partials/footer"); %>
     </body>
     <%- include("../partials/scripts"); %>
