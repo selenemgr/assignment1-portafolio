@@ -727,7 +727,7 @@ div {
 .img-fluid-horizontal {
   width: 100%; 
   height: 100%; 
-  max-width: 350px;
+  max-width: 400px;
   max-height: 300px;
   min-width: 350px;
   min-height: 300px;
@@ -3831,7 +3831,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
-  min-width: 460px;
+  min-width: 250px;
 }
 
 .nav-link, .nav-link-top {
@@ -7697,6 +7697,10 @@ textarea.form-control-lg {
   width: 75% !important;
 }
 
+.w-85 {
+  width: 85% !important ;
+}
+
 .w-100 {
   width: 100% !important;
 }
@@ -8391,6 +8395,10 @@ textarea.form-control-lg {
 
 .font-monospace {
   font-family: var(--bs-font-monospace) !important;
+}
+
+.fs-big {
+  font-size: calc(1.380rem + 1.6vw) !important;
 }
 
 .fs-1 {
