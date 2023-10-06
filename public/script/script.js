@@ -94,10 +94,10 @@ function changeNavBarItems(path){
             items[3].innerHTML = "Player Management System";
         } 
         else if (path === '/services'){    
-            items[0].innerHTML = "Service 1";
-            items[1].innerHTML = "Service 2";
-            items[2].innerHTML = "Service 3";
-            items[3].innerHTML = "Service 4";
+            items[0].innerHTML = "Illustrations";
+            items[1].innerHTML = "Web Design";
+            items[2].innerHTML = "App Development";
+            items[3].innerHTML = "Video/Audio Edition<";
         }; 
     };
 };
