@@ -1,3 +1,5 @@
+/* Selene Munoz (301268109) */
+
 document.addEventListener('DOMContentLoaded', function () {
     // Get the current path from the URL
     const path = window.location.pathname;
