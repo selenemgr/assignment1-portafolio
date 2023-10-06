@@ -88,10 +88,10 @@ function changeNavBarItems(path){
             items[3].innerHTML = "Animals";
         }
         else if (path === '/projects'){
-            items[0].innerHTML = "Project 1";
-            items[1].innerHTML = "Project 2";
-            items[2].innerHTML = "Project 3";
-            items[3].innerHTML = "Project 4";
+            items[0].innerHTML = 'Images "Puffles" Displayer';
+            items[1].innerHTML = "Gem Catcher";
+            items[2].innerHTML = "Interactive Calculator";
+            items[3].innerHTML = "Player Management System";
         } 
         else if (path === '/services'){    
             items[0].innerHTML = "Service 1";
